@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 const ModalSection = () => {
   return (
@@ -14,13 +13,17 @@ const ModalSection = () => {
       </div>
 
       <div className="relative flex justify-center items-center mt-10">
-        {/* Círculo laranja (aumentado) */}
-        <div className='absolute w-[600px] h-[600px] bg-orange rounded-full z-0' style={{ top: '-150px', left: '-200px' }}></div>
+        
+        <div className='absolute w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-orange rounded-full z-0' 
+          style={{ top: '-70px', left: '-100px' }}>
+        </div>
 
-        {/* Círculo roxo (aumentado e movido para baixo) */}
-        <div className='absolute w-[450px] h-[450px] bg-purple rounded-full z-0' style={{ top: '2px', right: '30px' }}></div>
+        
+        <div className='absolute w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-purple rounded-full z-0' 
+          style={{ top: '50px', right: '10px' }}>
+        </div>
 
-        {/* Imagem centralizada */}
+        
         <Image
           src={'/Desktop.png'}
           alt='desktop'

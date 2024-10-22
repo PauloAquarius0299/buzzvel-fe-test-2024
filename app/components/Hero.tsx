@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className='py-4'>
+    <section className='py-10'>
       <div className='flex flex-col md:flex-row justify-between mt-4 space-y-4 md:space-y-0 px-10'>
         <div className='md:hidden mb-4'>
           <Image 
@@ -35,7 +35,7 @@ const Hero = () => {
                 />
                 <div>
                   <p className='font-semibold'>Rwanda Melflor</p>
-                  <span className='text-gray-500'>zerowast.com</span>
+                  <span className='text-greyText'>zerowast.com</span>
                 </div>
               </div>
             </div>

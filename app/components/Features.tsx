@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 const Features = () => {
   return (
-    <section className='py-8'>
+    <section className='py-10'>
       <div className='flex flex-col md:flex-row justify-between items-start'>
         <div className='flex-1 px-4 md:px-10'>
-          <p className="text-orangeBold mb-4 font-semibold">System features</p>
+          <p className="text-orangeBold mb-8 font-semibold">System features</p>
           <h4 className="font-bold text-textColor mb-4 text-4xl">Powerful features</h4>
-          <p className="text-textColor">
+          <p className="text-textColor ">
             Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis semper id sit ornare maecenas lectus sed.
           </p>
 

@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         white: "#FFFFFF",
+        whiteSlider: "#E2E8F0",
         textColor: "#0F172A",
+        greyText: "#475569",
         purple: "#7E22CE",
         orange: "#F59E0B",
         cyanOrange: "#FBBF24",

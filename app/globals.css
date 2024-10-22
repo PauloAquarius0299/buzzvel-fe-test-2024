@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.embla {
+  position: relative;
+  width: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  gap: 10px; 
+  transition: transform 0.3s ease;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 26%; 
+  padding: 20;
+}
+
+@media (max-width: 640px) {
+  .embla__slide {
+    min-width: 100%; 
+  }
+
+  .embla__button {
+    text-align: center;
+  }
+ 
+}

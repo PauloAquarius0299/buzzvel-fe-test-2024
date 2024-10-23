@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className='py-10'>
+    <section className='p-10'>
       <div className='flex flex-col md:flex-row justify-between mt-4 space-y-4 md:space-y-0 px-10'>
         <div className='md:hidden mb-4'>
           <Image 
@@ -17,8 +17,8 @@ const Hero = () => {
         </div>
 
         <div className='space-y-6 text-center md:text-left'>
-          <h1 className='text-textColor font-bold text-6xl'>Get the Sun to <br></br> Power Your Home</h1>
-          <p className='text-textColor mt-2 text-xl'>Viverra viverra nibh enim et aliquam, enim. Tempor, sit <br></br> mus viverra orci dui consequat turpis scelerisque.</p>
+          <h1 className='text-textColor text-4xl font-bold md:text-6xl'>Get the Sun to <br></br> Power Your Home</h1>
+          <p className='text-textColor mt-2 text-lg md:text-xl'>Viverra viverra nibh enim et aliquam, enim. Tempor, sit <br></br> mus viverra orci dui consequat turpis scelerisque.</p>
           <Button variant='primary'>Request a Quote</Button>
           <div className='mt-8'>
             <div className='mt-20'>

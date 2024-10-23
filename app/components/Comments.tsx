@@ -5,7 +5,7 @@ const Comments = () => {
   return (
     <section className='py-10 px-4 md:px-10 bg-purpleBold'>
       <div className='flex flex-col md:flex-row justify-between items-start'>
-        <div className='flex-1 text-center md:text-left'> {/* Centraliza texto em mobile */}
+        <div className='flex-1 text-center md:text-left'> 
           <p className="text-cyanOrange mb-4 font-semibold">Join other Sun harvesters</p>
           <h4 className="font-bold text-white space-y-6 text-4xl">Make something awesome</h4>
           <p className="text-white mt-8">

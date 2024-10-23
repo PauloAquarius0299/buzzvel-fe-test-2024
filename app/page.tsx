@@ -1,4 +1,5 @@
 import Comments from "./components/Comments";
+import Desktop from "./components/Desktop";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <Features />
       <Comments />
+      <Desktop />
     </main>
   );
 }

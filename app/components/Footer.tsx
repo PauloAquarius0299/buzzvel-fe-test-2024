@@ -12,14 +12,14 @@ const Footer = () => {
             height={100}
             className="md:w-auto"  
           />
-          <p className="text-center md:text-left">
+          <p className="text-center md:text-left  font-semibold text-textColor">
             © 2023 Soller, Inc. All rights reserved.
           </p>
         </div>
 
         <div className="mt-4 md:mt-0">
-          <ul className="flex space-x-4">
-            <li>
+          <ul className="flex space-x-4 text-textColor font-semibold">
+          <li>
               <a href="#" className="hover:underline">Terms</a>
             </li>
             <li>
@@ -28,6 +28,7 @@ const Footer = () => {
             <li>
               <a href="#" className="hover:underline">Support</a>
             </li>
+
           </ul>
         </div>
       </div>

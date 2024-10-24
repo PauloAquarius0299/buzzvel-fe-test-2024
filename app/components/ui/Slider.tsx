@@ -1,11 +1,11 @@
-'use client';
-
+'use client'
 import React, { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
-import { ArrowLeft, ArrowRight } from 'lucide-react'; 
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { ClientsData } from '@/app/data/clients';
+import { motion } from 'framer-motion';
 
 export function Slider() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -40,7 +40,12 @@ export function Slider() {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {ClientsData.map((client, index) => (
-            <div key={index} className="embla__slide flex justify-center items-center">
+            <motion.div 
+              key={index} 
+              className="embla__slide flex justify-center items-center"
+              whileHover={{ scale: 1.05 }}  // Aumenta o tamanho quando o mouse passa por cima
+              whileTap={{ scale: 1.1 }}     // Aumenta mais quando clica
+            >
               <div className="bg-whiteSlider p-6 rounded-lg shadow-lg max-w-xs mx-4">
                 <p className="text-textColor mb-4 text-center">{client.description}</p>
                 <div className='flex items-center justify-center'>
@@ -59,7 +64,7 @@ export function Slider() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
